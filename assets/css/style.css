@@ -110,10 +110,21 @@ html{
 
 /* About */
 #content{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url(https://static-cdn4-2.vigbo.tech/u36944/49011/blog/3881024/4873378/63603180/1000-2f24c2dadca843f2537db9586dfa0bc3.jpg) top center /cover;   
+}
+
+#content .layout{
+    background: rgba(38,50,56,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .sub-content{
