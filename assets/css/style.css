@@ -1,0 +1,179 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html{
+    /* hành vi khi cuộn */
+    scroll-behavior: smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+    /* giải quyết vấn đề của float */
+}
+
+.italic{
+    font-style: italic;
+}
+.text-white{
+    color: #fff !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.column{
+    float: left;
+    padding: 0 16px;
+}
+
+.column-third{
+    width: calc(100%/3);
+}
+
+.column-half{
+    width: 50%;
+}
+
+.column-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-blue{
+    color: rgb(82, 146, 197); 
+}
+
+.text-inline{
+  display: inline;  
+}
+
+.clear-padding-left{
+    padding-left: 8px !important;
+}
+
+.clear-padding-right{
+    padding-right: 8px !important;
+}
+
+/* Slider */
+
+#slider .slider-img{
+    background: url("https://artifex.ru/wp-content/uploads/2017/04/Живопись_Пьер-Огюст-Ренуар_Завтрак-гребцов-1880-81.jpg") top center / cover no-repeat;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    
+}
+
+.slider-img .layout{
+    background: rgba(38,50,56,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+
+.slider-img .text-content{
+    display: flex;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    flex-direction:column;
+    color: #ffd600;
+    font-size: 40px;
+    z-index: 1;
+}
+
+/* Content */
+
+/* About */
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://static-cdn4-2.vigbo.tech/u36944/49011/blog/3881024/4873378/63603180/1000-2f24c2dadca843f2537db9586dfa0bc3.jpg) top center /cover;   
+}
+
+.sub-content{
+    position: relative;
+    margin-top: 33px;
+    padding-top: 1px;
+}
+
+.sub-content::before{
+    content: "";
+    width: 220px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -110px;
+    background: #c0d3dc;
+}
+
+#content .content-header{
+    font-size: 16px;
+}
+
+#content .content-section{
+    position: relative;
+    background-color: #fff;
+    padding: 64px;
+    width: 800px;
+    min-width: 800px;
+}
+
+
+#content .section-heading{
+    margin: 32px 0 16px 0;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content .section-sub-heading{
+    margin: 15px 0;
+    font-size: 15px;
+    color: #676767;
+    font-style: italic;
+}
+
+#content .about-text{
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#content img{
+    padding: 10px 0;
+    width: 100%;
+}
+
+#content p{
+    padding: 6px;
+}
+
